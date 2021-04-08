@@ -7,7 +7,13 @@ rules:
   - intent: goodbye
   - action: utter_goodbye
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Say 'I am sorry, I have not been trained to answer into that question. I will inform my master.' anytime the user challenges
   steps:
   - intent: bot_challenge
+  - action: utter_iamabot
+
+
+- rule: Say 'I am sorry, I have not been trained to answer into that question. I will inform my master.' anytime the user challenges
+  steps:
+  - intent: not_trained
   - action: utter_iamabot

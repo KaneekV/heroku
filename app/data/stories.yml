@@ -2,29 +2,45 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: welcome
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
 
-- story: sad path 1
+- story: inquire NSBM
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: nsbm
+  - action: utter_nsbm
 
-- story: sad path 2
+
+- story: inquire programs at computing faculty
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: offer_fac_comp
+  - action: utter_offer_fac_comp
+
+- story: local degree inquiry
+  steps:
+  - intent: local_degree
+  - action: utter_local_degree
+
+- story: foreign degree inquiry
+  steps:
+  - intent: foreign_degree
+  - action: utter_foreign_degree
+
+- story: masters degree inquiry
+  steps:
+  - intent: masters
+  - action: utter_masters
+
+- story: need more info
+  steps:
+  - intent: confirmance
+  - action: utter_confirmance
+
+- story: satisfied with the info
+  steps:
+  - intent: saturation
+  - action: utter_saturation
+
+

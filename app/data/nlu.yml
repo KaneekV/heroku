@@ -31,62 +31,87 @@ nlu:
     - bye bye
     - see you later
 
-- intent: affirm
+- intent: local_degree
+  examples: |
+    - local
+    - local undergraduate
+    - ugc
+    - sri lanka
+    - national
+    - 4 years
+    - four years
+    - special
+    - nsbm
+    - local degree
+    - ugc approved
+    - local programs
+
+- intent: foreign_degree
+  examples: |
+    - british
+    - uk
+    - england
+    - plymouth
+    - austrlia
+    - victoria
+    - foreign
+    - international
+    - ugc approved
+    - foreign programs
+    - foreign undergraduate
+    - brish undergraduate
+    - australian undergraduate
+    - plymouth undergraduate
+
+- intent: nsbm
+  examples: |
+    - what is nsbm
+    - what is national school of business management
+    - green university
+
+- intent: confirmance
   examples: |
     - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - i need more information
+    - green university
 
-- intent: deny
+- intent: saturation
   examples: |
     - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - thanks, i am ok
+    - that`s it
+    - i am satisfied with the information recevied.
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
 
-- intent: mood_unhappy
+- intent: masters
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - postgraduate
+    - masters
+    - after the degree programs
+    - after undergraduate
+    - masters courses
 
-- intent: bot_challenge
+
+
+- intent: not_trained
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - age
+    - marriage
+    - die
+    - love
+    - kill
+
+- intent: offer_fac_comp
+  examples: |
+    - what do you have
+    - list of programs in computing faculty
+    - list of courses
+    - details of programs
+    - types of programs
+    - school of computing
+    - faculty of computing
+    - what are the programs you offer
+    - what are the courses you offer
+    - it courses
+    - it programs
+    - it degrees

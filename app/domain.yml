@@ -3,31 +3,62 @@ version: "2.0"
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - local_degree
+  - foreign_degree
+  - masters
+  - nsbm
+  - not_trained
+  - offer_fac_comp
+  - confirmance
+  - saturation
+  - utter_iamabot
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! How are you? I am NSBM_INQ bot developed by Department of Data Science, Faculty of Computing. \n
+           What can I do to help you ?"
 
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_confirmance:
+    - text: "Please tell me , how should I help you more ?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_saturation:
+    - text: "Great. So, I guess it`s time to say good bye"
 
-  utter_happy:
-  - text: "Great, carry on!"
+  utter_nsbm:
+  - text: "NSBM is a UGC approved fully government owned green university \n
+           Currently it comprises of 03 faculties and keep on expanding \n
+           What else you need to know ? Inquire me."
+
+  utter_offer_fac_comp:
+  - text: "We offer programs ranging from certificate level, up to postgraduate level \n
+           Are you looking for a local program or foreign program ?"
+
+  utter_local_degree:
+  - text: "Here are a list of local undergraduate programs we offer at NSBM faculty of computing : - \n
+          01. BSc in Management Information Systems (Special) - UGC Approved- offered by NSBM \n
+          02. BSc (Hons) in Computer Science - UGC Approved- offered by NSBM \n
+          03. BSc (Hons) in Software Engineering - UGC Approved- offered by NSBM \n
+          04. BSc (Hons) in Computer Networks - UGC Approved- offered by NSBM \n
+          05. BSc (Hons) in Data Science - UGC Approved- offered by NSBM [YET TO COMMENCE] \n
+          Do you need anything else ?"
+
+  utter_foreign_degree:
+  - text: "Here are a list of foreign undergraduate programs we offer at NSBM faculty of computing : - \n
+           01. BSc (Hons) in Computer Networks - Plymouth University - [UK] \n
+           02. BSc (Hons) in  Computer Security - Plymouth University - [UK] \n
+           03. BSc (Hons) in Computer Science - Plymouth University - [UK] \n
+           04. BSc (Hons) in Software Engineering -Plymouth University - [UK] \n
+           05. Bachelor of Information Technology (NBIT) : Major in Mobile & Web Development - Victoria University - [Australia] \n
+           Do you need anything else ?"
+
+  utter_masters:
+  - text: "We are in the process of releasing a masters program very soon. \n Do you need anything else ?"
 
   utter_goodbye:
-  - text: "Bye"
+      - text: "It`s a pleasure to have a chat with you and help you. Have a nice day."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am sorry, I have not been trained to answer into that question. I will inform my master."
 
 session_config:
   session_expiration_time: 60
